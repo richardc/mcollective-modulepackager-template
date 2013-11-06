@@ -9,3 +9,10 @@ underscore will be expanded with ERB.
 The \_manifest.pp.erb is a template that will be used to generate the specific
 mcollective\_plugin\_foo::agent mcollective\_plugin\_foo::application class
 templates.
+
+
+    $ cd my-awesome-plugin
+    $ mco plugin package \
+        --format modulepackage \
+        --vendor richardc \
+        --module-template ~/src/my_special_template
